@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html_101</title>
     <h1>html_101 Öğrenim içeriğim.</h1>
+
+    <style>
+        .formDiv {
+            width: 350px;
+            background-color: aqua;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -31,8 +39,85 @@
         <input type="reset" value="Temizle" />
     </form>
     <hr>
-    <a href="index.html">Go to - İndex page</a><br>
-    <a href="main.html">Go to - Main page</a>
+
+    <div class="formDiv">
+        <h3>Deneme Form</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Ad" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Soyad" /></td>
+                </tr>
+                <tr>
+                    <td><input type="email" placeholder="E-mail" /></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Şifreniz" /></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyetiniz</td>
+                    <td>
+                        <input id="erkekRadio" type="radio" name="cinsiyetRadio" value="erkek" />
+                        <label for="erkekRadio">Erkek</label>
+                        <input id="kadinRadio" type="radio" name="cinsiyetRadio" value="kadın" />
+                        <label for="kadinRadio">Kadın</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihi : </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Hobiler</th>
+                </tr>
+                <tr>
+                    <td>Bisiklet sürmek</td>
+                    <td><input type="checkbox" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Yüzme sporları</td>
+                    <td><input type="checkbox" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kitap okumak</td>
+                    <td><input type="checkbox" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="file" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="" cols="40" rows="10"
+                            placeholder="Mesajınızı giriniz"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Okudum, onaylıyorum. <input type="radio" name="sozlesmeRadio"></td>
+                </tr>
+                <tr>
+                    <td>Okudum, onaylamıyorum. <input type="radio" name="sozlesmeRadio"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Gönder">
+                        <input type="reset" value="Temizle">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <hr>
+
+    <a href="index.html">Go to - Index page</a><br>
+    <a href="main.html">Go to - Main page</a><br>
+    <a href="video.html">Go to - Video page</a>
 </body>
 
 </html>
